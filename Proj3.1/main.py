@@ -18,7 +18,7 @@ def output_array(array):
             print("%d\t" % j, end='')
         print('')
 
-# Нахождение минимального элемента
+# Нахождение максимального элемента
 def search_max(max_eL, array):
     for i in array:
         for j in i:
@@ -40,9 +40,9 @@ def solve_task(array, max_elem):
 def main():
     array = input_array(4, 5)
     output_array(array)
-    # Задаем мин элемент
+    # Задаем макс элемент
     max_elem = array[0][0]
-    # Находим мин элемент в массиве
+    # Находим макс элемент в массиве
     max_elem = search_max(max_elem, array)
     array = solve_task(array, max_elem)
     output_array(array)
